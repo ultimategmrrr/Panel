@@ -659,9 +659,11 @@ body{
 
         <video
             controls
-            controlsList="nodownload
+            controlsList="nodownload"
             playsinline
-            preload="metadata"
+            webkit-playsinline
+            preload="auto"
+            disablePictureInPicture
         >
 
             <source
@@ -712,12 +714,7 @@ body{
 
                 <!-- CLICKABLE IMAGE -->
 
-                <a
-                    href="CLAIM_URL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="product-link"
-                >
+                <div class="product-link">
 
                     <img
                         class="product-image"
@@ -725,7 +722,7 @@ body{
                         alt="Macro Space Panel"
                     >
 
-                </a>
+                </div>
 
 
 
